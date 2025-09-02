@@ -1,1 +1,28 @@
-.idea
+$TTL 3600
+@	IN SOA dns200.anycast.me. tech.ovh.net. (2025071503 86400 3600 3600000 60)
+        IN NS     dns200.anycast.me.
+        IN NS     ns200.anycast.me.
+        IN MX     5 mx2.mail.ovh.net.
+        IN MX     1 mx1.mail.ovh.net.
+        IN MX     100 mx3.mail.ovh.net.
+        IN A     185.199.108.153
+        IN A     185.199.109.153
+        IN A     185.199.110.153
+        IN A     185.199.111.153
+        IN AAAA     2606:50c0:8000::153
+        IN AAAA     2606:50c0:8001::153
+        IN AAAA     2606:50c0:8002::153
+        IN AAAA     2606:50c0:8003::153
+    600 IN TXT     "v=spf1 include:mx.ovh.com -all"
+        IN TXT     "1|www.4100-duisburg.de"
+ftp        IN CNAME     4100-duisburg.de.
+www        IN A     185.199.108.153
+www        IN A     185.199.109.153
+www        IN A     185.199.110.153
+www        IN A     185.199.111.153
+www        IN AAAA     2606:50c0:8000::153
+www        IN AAAA     2606:50c0:8001::153
+www        IN AAAA     2606:50c0:8002::153
+www        IN AAAA     2606:50c0:8003::153
+www        IN TXT     "3|welcome"
+
